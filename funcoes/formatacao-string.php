@@ -29,3 +29,7 @@ echo $resultado;
 echo "<br>";
 
 vprintf("Curso de %s versao %0.1f", $entrada);
+
+var_dump(strcmp("aa", "AA"), "aa" <=> "AA", "aa" === "AA");
+
+var_dump( "treinaweb" === 0, "11t" == 11  );
