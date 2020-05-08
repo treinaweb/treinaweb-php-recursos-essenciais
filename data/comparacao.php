@@ -11,3 +11,12 @@ var_dump("000-2" > "000-1999"); //caractere a caractere
 var_dump(
     strtotime("2020-01-30") > strtotime("5-2-2020")
 );
+
+$aniversarioDaniel = new DateTimeImmutable('2020-04-26');
+$aniversarioElton = $aniversarioDaniel->add(new DateInterval('P3M27D'));
+
+if ($aniversarioDaniel > $aniversarioElton) {
+    echo "O aniversario do daniel é depois do do Elton";
+} else {
+    echo "O aniversario do Elton é depois do do Daniel";
+}
